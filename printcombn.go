@@ -13,7 +13,6 @@ func PrintCombN(size int) {
 	}
 	PrintCombNUtil(data, 0, 9, 0, size)
 	z01.PrintRune('\n')
-
 }
 
 func PrintCombNUtil(data []rune, start int, end int, index int, size int) {
