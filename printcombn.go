@@ -13,6 +13,7 @@ func PrintCombN(size int) {
 	}
 	PrintCombNUtil(data, 0, 9, 0, size)
 }
+
 func PrintCombNUtil(data []rune, start int, end int, index int, size int) {
 	if index == size {
 		for j := 0; j < size; j++ {
@@ -30,5 +31,4 @@ func PrintCombNUtil(data []rune, start int, end int, index int, size int) {
 		PrintCombNUtil(data, i+1, end, index+1, size)
 		i++
 	}
-
 }
