@@ -1,6 +1,9 @@
 package piscine
 
 func Atoi(s string) int {
+	if s == "" {
+		return 0
+	}
 	sArr := []rune(s)
 	minus := 1
 	if sArr[0] == '-' {
