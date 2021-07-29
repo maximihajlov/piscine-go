@@ -26,10 +26,8 @@ func PrintCombNUtil(data []rune, start int, end int, index int, size int) {
 		}
 		return
 	}
-	i := start
-	for i <= end && end-i+1 >= size-index {
+	for i := start; i <= end && end-i+1 >= size-index; i++ {
 		data[index] = nums[i]
 		PrintCombNUtil(data, i+1, end, index+1, size)
-		i++
 	}
 }
