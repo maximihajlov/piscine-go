@@ -14,15 +14,11 @@ func Atoi(s string) int {
 	}
 	n := 0
 	for i := 0; i < len(sArr); i++ {
-		if sArr[i] > 57 || sArr[i] < 48 {
+		if sArr[i] < '0' || '9' < sArr[i] {
 			return 0
 		}
-		pow := 1
-		for j := 1; j < len(sArr)-i; j++ {
-			pow *= 10
-		}
-
-		n += int(sArr[i]-48) * pow
+		n *= 10
+		n += int(sArr[i] - '0')
 	}
 	return minus * n
 }
