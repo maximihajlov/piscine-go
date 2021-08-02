@@ -1,4 +1,4 @@
-package piscine
+package Q4
 
 func IsPrime(nb int) bool {
 	if nb < 2 {
