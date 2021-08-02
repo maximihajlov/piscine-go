@@ -1,4 +1,4 @@
-package piscine
+package Q4
 
 func Fibonacci(index int) int {
 	if index < 2 {

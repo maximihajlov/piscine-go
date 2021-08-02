@@ -1,4 +1,4 @@
-package piscine
+package Q4
 
 func Sqrt(nb int) int {
 	i := 1

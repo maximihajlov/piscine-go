@@ -1,4 +1,4 @@
-package piscine
+package Q4
 
 func RecursivePower(nb int, power int) int {
 	if power < 0 {
