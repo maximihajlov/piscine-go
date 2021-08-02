@@ -1,4 +1,4 @@
-package piscine
+package Q4
 
 func IterativeFactorial(nb int) int {
 	if nb < 0 || nb > 20 {
