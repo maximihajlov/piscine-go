@@ -1,4 +1,4 @@
-package piscine
+package Q5
 
 func Compare(a, b string) int {
 	if a > b {
