@@ -1,4 +1,4 @@
-package piscine
+package Q5
 
 func NRune(s string, n int) rune {
 	if len(s) < n || n <= 0 {
