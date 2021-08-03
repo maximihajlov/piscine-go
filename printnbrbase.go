@@ -27,8 +27,13 @@ func PrintNbrBase(nbr int, base string) {
 		z01.PrintRune('-')
 	}
 	for nbr != 0 {
-		ans = append(ans, basArr[nbr%-baseN])
-		nbr /= -baseN
+		if nbr < 0 {
+			ans = append(ans, basArr[nbr%-baseN])
+			nbr /= -baseN
+		} else {
+			ans = append(ans, basArr[nbr%baseN])
+			nbr /= baseN
+		}
 	}
 	for i := len(ans) - 1; i >= 0; i-- {
 		z01.PrintRune(ans[i])
