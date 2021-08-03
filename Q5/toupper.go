@@ -1,4 +1,4 @@
-package piscine
+package Q5
 
 func ToUpper(s string) string {
 	sArr := []rune(s)

@@ -1,4 +1,4 @@
-package piscine
+package Q5
 
 func ToLower(s string) string {
 	sArr := []rune(s)
