@@ -8,7 +8,7 @@ func Capitalize(s string) string {
 	for i := 1; i < len(sArr); i++ {
 		if !('0' <= sArr[i-1] && sArr[i-1] <= '9' || 'a' <= sArr[i-1] && sArr[i-1] <= 'z' || 'A' <= sArr[i-1] && sArr[i-1] <= 'Z') && 'a' <= sArr[i] && sArr[i] <= 'z' {
 			sArr[i] += 'A' - 'a'
-		} else if 'A' <= sArr[i-1] && sArr[i-1] <= 'Z' && 'A' <= sArr[i] && sArr[i] <= 'Z' {
+		} else if 'A' <= sArr[i] && sArr[i] <= 'Z' {
 			sArr[i] -= 'A' - 'a'
 		}
 	}
