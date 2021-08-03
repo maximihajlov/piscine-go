@@ -24,6 +24,9 @@ func PrintNbrBase(nbr int, base string) {
 	}
 
 	if nbr < 0 {
+		if nbr != -9223372036854775808 {
+			nbr *= -1
+		}
 		z01.PrintRune('-')
 	}
 	for nbr != 0 {
