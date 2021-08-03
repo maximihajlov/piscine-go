@@ -1,4 +1,4 @@
-package piscine
+package Q5
 
 func Capitalize(s string) string {
 	sArr := []rune(s)
