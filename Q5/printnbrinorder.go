@@ -1,4 +1,4 @@
-package piscine
+package Q5
 
 import (
 	"github.com/01-edu/z01"

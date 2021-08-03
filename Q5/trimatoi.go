@@ -1,4 +1,4 @@
-package piscine
+package Q5
 
 func TrimAtoi(s string) int {
 	sArr := []rune(s)
