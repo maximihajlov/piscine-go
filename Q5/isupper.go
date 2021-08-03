@@ -1,4 +1,4 @@
-package piscine
+package Q5
 
 func IsUpper(s string) bool {
 	sArr := []rune(s)
