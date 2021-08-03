@@ -1,9 +1,9 @@
 package piscine
 
-func IsNumeric(s string) bool {
+func IsPrintable(s string) bool {
 	sArr := []rune(s)
 	for i := range sArr {
-		if !('0' <= sArr[i] && sArr[i] <= '9') {
+		if !(' ' <= sArr[i] && sArr[i] <= 127) {
 			return false
 		}
 	}
