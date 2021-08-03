@@ -23,16 +23,12 @@ func PrintNbrBase(nbr int, base string) {
 		}
 	}
 
-	wNum := nbr
-
-	if wNum < 0 {
+	if nbr < 0 {
 		z01.PrintRune('-')
-		wNum *= -1
 	}
-
-	for wNum > 0 {
-		ans = append(ans, basArr[wNum%baseN])
-		wNum /= baseN
+	for nbr != 0 {
+		ans = append(ans, basArr[nbr%-baseN])
+		nbr /= -baseN
 	}
 	for i := len(ans) - 1; i >= 0; i-- {
 		z01.PrintRune(ans[i])
