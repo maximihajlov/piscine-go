@@ -1,6 +1,7 @@
-package piscine
+package Q4
 
 import (
+	"fmt"
 	"github.com/01-edu/z01"
 )
 
@@ -12,7 +13,7 @@ func EightQueens() {
 
 func setQueen(x int) {
 	if x == 8 {
-		showSolution()
+		showBoard()
 		z01.PrintRune('\n')
 	}
 	for i := 0; i < 8; i++ {
@@ -50,5 +51,11 @@ func showSolution() {
 				z01.PrintRune(j + 1)
 			}
 		}
+	}
+}
+func showBoard() {
+	for i := 0; i < 8; i++ {
+		fmt.Print(board[i])
+		fmt.Println()
 	}
 }
