@@ -15,7 +15,7 @@ func PrintNbrBase(nbr int, base string) {
 	var ans []rune
 	for i := range basArr {
 		for j := i + 1; j < len(basArr); j++ {
-			if basArr[i] == basArr[j] {
+			if basArr[i] == basArr[j] || basArr[i] == '-' || basArr[i] == '+' {
 				z01.PrintRune('N')
 				z01.PrintRune('V')
 				return
