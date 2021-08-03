@@ -2,6 +2,7 @@ package Q4
 
 import (
 	"fmt"
+
 	"github.com/01-edu/z01"
 )
 
@@ -53,6 +54,7 @@ func showSolution() {
 		}
 	}
 }
+
 func showBoard() {
 	for i := 0; i < 8; i++ {
 		fmt.Print(board[i])
