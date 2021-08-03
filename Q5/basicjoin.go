@@ -1,4 +1,4 @@
-package piscine
+package Q5
 
 func BasicJoin(elems []string) string {
 	ans := ""

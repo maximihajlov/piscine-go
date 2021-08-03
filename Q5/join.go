@@ -1,4 +1,4 @@
-package piscine
+package Q5
 
 func Join(strs []string, sep string) string {
 	ans := ""
