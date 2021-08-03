@@ -1,4 +1,4 @@
-package piscine
+package Q5
 
 func Index(s string, toFind string) int {
 	sArr := []rune(s)
