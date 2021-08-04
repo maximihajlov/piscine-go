@@ -44,6 +44,7 @@ func main() {
 		sort(&ans)
 	}
 	fmt.Print(ans)
+	fmt.Println()
 }
 
 func insert(arg string, s *string) {
