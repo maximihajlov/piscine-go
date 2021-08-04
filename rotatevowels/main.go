@@ -14,9 +14,7 @@ func main() {
 	} else {
 		for i := 1; i < len(os.Args); i++ {
 			s += os.Args[i]
-			if i != len(os.Args)-1 {
-				s += " "
-			}
+			s += " "
 		}
 	}
 	mirror(&s)
