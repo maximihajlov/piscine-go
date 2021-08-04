@@ -41,7 +41,7 @@ func mirror(s *string) {
 }
 
 func isVowel(l rune) bool {
-	vowels := [...]rune{'a', 'e', 'i', 'j', 'o', 'u', 'A', 'E', 'I', 'J', 'O', 'U'}
+	vowels := [...]rune{'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
 
 	for i := range vowels {
 		if l == vowels[i] {
