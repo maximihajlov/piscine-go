@@ -7,13 +7,9 @@ import (
 )
 
 func main() {
-	name := os.Args[0]
-	nArr := []rune(name)
-	for i := len(nArr) - 1; i >= 0; i-- {
-		if nArr[i] == '/' {
-			for j := i + 1; j < len(nArr); j++ {
-				z01.PrintRune(nArr[j])
-			}
-		}
+	nArr := []rune(os.Args[0])
+	for i := range nArr {
+		z01.PrintRune(nArr[i])
 	}
+	z01.PrintRune('\n')
 }
