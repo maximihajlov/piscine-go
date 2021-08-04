@@ -9,10 +9,16 @@ import (
 func main() {
 	i := 1
 	a := 'a'
-	if len(os.Args) > 2 && os.Args[1] == "--upper" {
+
+	if len(os.Args) > 2 {
+		return
+	}
+
+	if os.Args[1] == "--upper" {
 		i = 2
 		a = 'A'
 	}
+
 	for ; i < len(os.Args); i++ {
 		n := Atoi(os.Args[i])
 		if 0 < n && n < 27 {
