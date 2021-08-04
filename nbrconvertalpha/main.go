@@ -10,7 +10,7 @@ func main() {
 	i := 1
 	a := 'a'
 
-	if len(os.Args) > 2 {
+	if len(os.Args) < 2 {
 		return
 	}
 
