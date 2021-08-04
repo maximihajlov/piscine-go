@@ -1,4 +1,4 @@
-package piscine
+package Q5
 
 import (
 	"github.com/01-edu/z01"
@@ -28,7 +28,7 @@ func PrintNbrBase(nbr int, base string) {
 	}
 	for nbr != 0 {
 		if nbr < 0 {
-			ans = append(ans, basArr[-(nbr%-baseN)])
+			ans = append(ans, basArr[-(nbr%baseN)])
 			nbr /= -baseN
 		} else {
 			ans = append(ans, basArr[nbr%baseN])

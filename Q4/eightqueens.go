@@ -15,6 +15,7 @@ func EightQueens() {
 func setQueen(x int) {
 	if x == 8 {
 		showBoard()
+		showSolution()
 		z01.PrintRune('\n')
 	}
 	for i := 0; i < 8; i++ {

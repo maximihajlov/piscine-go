@@ -1,4 +1,4 @@
-package piscine
+package Q5
 
 func AtoiBase(s string, base string) int {
 	if len(base) < 2 {
