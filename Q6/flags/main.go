@@ -9,7 +9,7 @@ func main() {
 	order := false
 	ans := ""
 
-	if len(os.Args) == 1 || os.Args[1] == "-h" || os.Args[1] == "--help" {
+	if len(os.Args) == 1 || len(os.Args) > 4 || os.Args[1] == "-h" || os.Args[1] == "--help" {
 		fmt.Print("--insert\n")
 		fmt.Print("  -i\n")
 		fmt.Print("\t This flag inserts the string into the string passed as argument.\n")
@@ -40,11 +40,12 @@ func main() {
 			insert(os.Args[1], &ans)
 		}
 	}
+
 	if order {
 		sort(&ans)
 	}
-	fmt.Print(ans)
-	fmt.Println()
+
+	fmt.Print(ans, "\n")
 }
 
 func insert(arg string, s *string) {
