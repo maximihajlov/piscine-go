@@ -8,8 +8,12 @@ import (
 
 func main() {
 	nArr := []rune(os.Args[0])
-	for i := range nArr {
-		z01.PrintRune(nArr[i])
+	for i := len(nArr) - 1; i >= 0; i-- {
+		if nArr[i] == '/' {
+			for j := i + 1; j < len(nArr); j++ {
+				z01.PrintRune(nArr[j])
+			}
+		}
 	}
 	z01.PrintRune('\n')
 }
