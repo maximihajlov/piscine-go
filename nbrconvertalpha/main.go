@@ -9,7 +9,7 @@ import (
 func main() {
 	i := 1
 	a := 'a'
-	if os.Args[1] == "--upper" {
+	if len(os.Args) > 2 && os.Args[1] == "--upper" {
 		i = 2
 		a = 'A'
 	}
