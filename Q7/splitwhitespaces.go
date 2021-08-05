@@ -1,4 +1,4 @@
-package piscine
+package Q7
 
 func SplitWhiteSpaces(s string) []string {
 	var ans []string

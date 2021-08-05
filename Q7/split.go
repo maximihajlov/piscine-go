@@ -1,4 +1,4 @@
-package piscine
+package Q7
 
 func Split(s, sep string) []string {
 	s = addSpaces(s, sep)
