@@ -1,4 +1,4 @@
-package piscine
+package Q7
 
 func MakeRange(min, max int) []int {
 	var ans []int
