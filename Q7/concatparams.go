@@ -1,4 +1,4 @@
-package piscine
+package Q7
 
 func ConcatParams(args []string) string {
 	ans := ""
