@@ -13,8 +13,7 @@ func main() {
 		return
 	} else {
 		for i := 1; i < len(os.Args); i++ {
-			s += os.Args[i]
-			s += " "
+			s += os.Args[i] + " "
 		}
 	}
 	mirror(&s)
