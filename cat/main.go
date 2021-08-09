@@ -37,5 +37,4 @@ func printStr(s string) {
 
 func stdUtil() {
 	io.Copy(os.Stdout, os.Stdin)
-	printStr("^C")
 }
