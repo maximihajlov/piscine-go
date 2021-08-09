@@ -15,7 +15,6 @@ func main() {
 	} else {
 		for _, arg := range os.Args[1:] {
 			readFile(arg)
-			printStr("\n")
 		}
 	}
 }
