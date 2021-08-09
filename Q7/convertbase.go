@@ -1,4 +1,4 @@
-package piscine
+package Q7
 
 func ConvertBase(nbr, baseFrom, baseTo string) string {
 	return numToBase(baseToNum(nbr, baseFrom), baseTo)
