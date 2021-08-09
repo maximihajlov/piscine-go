@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"io/ioutil"
 	"os"
 
@@ -35,5 +36,9 @@ func printStr(s string) {
 }
 
 func stdUtil() {
-	printStr("Hello\n")
+	consolescanner := bufio.NewScanner(os.Stdin)
+
+	for consolescanner.Scan() {
+		printStr(consolescanner.Text())
+	}
 }
