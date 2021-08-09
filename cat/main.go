@@ -1,7 +1,7 @@
 package main
 
 import (
-	"bufio"
+	"io"
 	"io/ioutil"
 	"os"
 
@@ -36,9 +36,6 @@ func printStr(s string) {
 }
 
 func stdUtil() {
-	consolescanner := bufio.NewScanner(os.Stdin)
-
-	for consolescanner.Scan() {
-		printStr(consolescanner.Text())
-	}
+	io.Copy(os.Stdout, os.Stdin)
+	printStr("^C")
 }
