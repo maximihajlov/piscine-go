@@ -11,22 +11,16 @@ import (
 func main() {
 	if len(os.Args) == 1 {
 		io.Copy(os.Stdout, os.Stdin)
-	} else if len(os.Args) == 2 {
-		readFile(os.Args[1])
 	} else {
 		for _, arg := range os.Args[1:] {
-			readFile(arg)
+			data, err := ioutil.ReadFile(arg)
+			if err != nil {
+				printStr("ERROR: " + err.Error() + "\n")
+				os.Exit(1)
+			}
+			printStr(string(data))
 		}
 	}
-}
-
-func readFile(filename string) {
-	data, err := ioutil.ReadFile(filename)
-	if err != nil {
-		printStr("ERROR: " + err.Error() + "\n")
-		os.Exit(1)
-	}
-	printStr(string(data))
 }
 
 func printStr(s string) {
