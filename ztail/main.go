@@ -5,6 +5,8 @@ import (
 	"os"
 )
 
+var errors = false
+
 func main() {
 	if len(os.Args) == 4 {
 		readFile(os.Args[3], true, true)
@@ -16,6 +18,9 @@ func main() {
 				readFile(file, false, false)
 			}
 		}
+	}
+	if errors {
+		os.Exit(1)
 	}
 }
 
@@ -33,6 +38,7 @@ func readFile(filename string, solo, first bool) {
 	data, err := os.ReadFile(filename)
 	if err != nil {
 		fmt.Printf(err.Error() + "\n")
+		errors = true
 		return
 	}
 	if !first {
