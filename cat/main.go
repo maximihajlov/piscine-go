@@ -15,6 +15,7 @@ func main() {
 	} else {
 		for _, arg := range os.Args[1:] {
 			readFile(arg)
+			printStr("\n")
 		}
 	}
 }
@@ -25,7 +26,7 @@ func readFile(filename string) {
 		printStr(err.Error() + "\n")
 		return
 	}
-	printStr(string(data) + "\n")
+	printStr(string(data))
 }
 
 func printStr(s string) {
