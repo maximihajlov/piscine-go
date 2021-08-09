@@ -22,7 +22,7 @@ func main() {
 func readFile(filename string) {
 	data, err := ioutil.ReadFile(filename)
 	if err != nil {
-		printStr(err.Error() + "\n")
+		printStr("ERROR: " + err.Error() + "\n")
 		return
 	}
 	printStr(string(data))
