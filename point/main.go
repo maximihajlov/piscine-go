@@ -22,6 +22,7 @@ func main() {
 	PrintNbr(points.x)
 	printStr(", y = ")
 	PrintNbr(points.y)
+	z01.PrintRune('\n')
 }
 
 func printStr(s string) {
