@@ -10,7 +10,7 @@ import (
 
 func main() {
 	if len(os.Args) == 1 {
-		stdUtil()
+		io.Copy(os.Stdout, os.Stdin)
 	} else if len(os.Args) == 2 {
 		readFile(os.Args[1])
 	} else {
@@ -33,8 +33,4 @@ func printStr(s string) {
 	for _, r := range s {
 		z01.PrintRune(r)
 	}
-}
-
-func stdUtil() {
-	io.Copy(os.Stdout, os.Stdin)
 }
