@@ -78,6 +78,10 @@ func Println(s string) {
 }
 
 func PrintNum(n int) {
+	if n == 0 {
+		Println("0")
+		return
+	}
 	var sArr []rune
 	ans := ""
 	minus := 1
