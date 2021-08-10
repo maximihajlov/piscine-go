@@ -1,4 +1,4 @@
-package piscine
+package Q9
 
 func CountIf(f func(string) bool, tab []string) int {
 	ans := 0

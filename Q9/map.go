@@ -1,4 +1,4 @@
-package piscine
+package Q9
 
 func Map(f func(int) bool, a []int) []bool {
 	var ans []bool

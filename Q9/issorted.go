@@ -1,4 +1,4 @@
-package piscine
+package Q9
 
 func IsSorted(f func(a, b int) int, a []int) bool {
 	if len(a) < 2 {
